@@ -1,24 +1,14 @@
 const model = {
     "lineLeftBottom" : document.getElementById('lineLeftBottom'),
     "lineLeftTop" : document.getElementById('lineLeftTop'),
-
     "lineRightBottom" : document.getElementById('lineRightBottom'),
     "lineRightTop" : document.getElementById('lineRightTop'),
-
     "dynamites" : Array.from(document.getElementsByClassName('dynamite')),
-
     "dynamitesTop1" : Array.from(document.getElementsByClassName('dynamite--top-1')),
     "dynamitesTop2" : Array.from(document.getElementsByClassName('dynamite--top-2')),
     "dynamitesTop3" : Array.from(document.getElementsByClassName('dynamite--top-3')),
     "dynamitesTop4" : Array.from(document.getElementsByClassName('dynamite--top-4')),
-
-    "dynamiteLeft1" : document.getElementById('dynamiteLeft1'),
-    "dynamiteLeft2" : document.getElementById('dynamiteLeft2'),
-    "dynamiteLeft3" : document.getElementById('dynamiteLeft3'),
-    "dynamiteLeft4" : document.getElementById('dynamiteLeft4'),
-
     "mainRoad" : document.getElementById('mainRoad'),
-
     "fire" : document.getElementById('fire')
 }
 
@@ -34,7 +24,14 @@ const operator = {
             dynamite.classList.add('hide');
         }, 100);
     },
+    "demolishBridge" : function() {
+        model.mainRoad.style.top = '395px';
+        model.lineLeftBottom.style.top = '350px';
+        model.lineRightBottom.style.top = '350px';
 
+        model.lineLeftTop.style.top = '350px';
+        model.lineRightTop.style.top = '350px';
+    },
     "eventListeners" : function() {
         model.fire.addEventListener('click', function() {
            console.log('FIRE IN THE HOOOOOLE');
@@ -48,18 +45,10 @@ const operator = {
            setTimeout(function() {
                 operator.fireDynamites(model.dynamitesTop1);
            }, 300);
+           setTimeout(function() {
+                operator.demolishBridge();
+           }, 300);
         });
-
-        dynamiteLeft1.addEventListener('transitionend', function() {
-            console.log(this);
-        });
-
-        // model.dynamites.forEach(function(dynamite) {
-        //     dynamite.addEventListener('transitionend', function(){
-        //         operator.hideDynamites(dynamite);
-        //     });
-        // });
-
     }
 }
 

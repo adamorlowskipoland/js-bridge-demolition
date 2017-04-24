@@ -22,6 +22,7 @@
     width: 75px;
     background: darkgray;
     position: absolute;
+    border: 1px solid black;
 }
 
 .sideroad--left {
@@ -33,11 +34,6 @@
     top: 120px;
     right: 0;
 }
-
-
-
-
-
 
 
 /* ######################## */
@@ -54,6 +50,7 @@
     width: 25px;
     height: 25px;
     background: darkgray;
+    border: 1px solid black;
 }
 
 /* ######################## */
@@ -72,14 +69,12 @@
 }
 .pole--left .line--right-bottom {
     top: 75px;
-    left: 100px;
-    background: orange;
+    left: 99px;
     transition: all .5s ease-in;
 }
 .pole--left .line--right-top {
     top: 50px;
-    left: 75px;
-    background: orange;
+    left: 74px;
     transition: all .5s ease-in;
 }
 
@@ -92,22 +87,20 @@
 .pole--right .line--left-bottom {
     top: 75px;
     left: -50px;
-    background: orange;
     transition: all .5s ease-in;
 }
 .pole--right .line--left-top {
     top: 50px;
     left: -25px;
-    background: orange;
     transition: all .5s ease-in;
 }
 .pole--right .line--right-bottom {
     top: 75px;
-    left: 100px;
+    left: 99px;
 }
 .pole--right .line--right-top {
     top: 50px;
-    left: 75px;
+    left: 74px;
 }
 /* ######################## */
 /* ######################## */
@@ -164,7 +157,6 @@
     background: yellow;
     border: 1px solid red;
     transform: translate(-50%, -50%);
-    /*transition: all .05s ease-out;*/
 }
 
 /* ######################## */
@@ -178,21 +170,13 @@
 
 .road {
     height: 50px;
-    width: 298px;
+    width: 299px;
     position: absolute;
     top: 120px;
     left: 150px;
     background: darkgray;
     transition: all .5s ease-in;
-}
-.road--down {
-    top: 395px;
-}
-.line--down {
-    top: 375px;
-}
-.line--down-top {
-    top: 350px;
+    border: 1px solid black;
 }
 
 /* ######################## */
@@ -209,9 +193,7 @@
 /* ######################## */
 /* ######################## */
 
-.detonator {
-    
-}
+
 .box {
     border: 1px solid darkred;
     background: #a0161b;
@@ -234,13 +216,7 @@
     padding: 2px;
     border-radius: 100%;
     cursor: pointer;
--webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
-}
-btn:active {
-    margin-top: 3px;
--webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.75);
 }
