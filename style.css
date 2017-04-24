@@ -120,6 +120,7 @@
     width: 5px;
     height: 5px;
     position: absolute;
+    z-index: 2;
 }
 #dynamiteLeft1 {
     top: 70px;
@@ -163,7 +164,7 @@
     background: yellow;
     border: 1px solid red;
     transform: translate(-50%, -50%);
-    transition: all .1s ease-out;
+    /*transition: all .05s ease-out;*/
 }
 
 /* ######################## */
