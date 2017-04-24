@@ -9,10 +9,16 @@ const model = {
     "dynamitesTop3" : Array.from(document.getElementsByClassName('dynamite--top-3')),
     "dynamitesTop4" : Array.from(document.getElementsByClassName('dynamite--top-4')),
     "mainRoad" : document.getElementById('mainRoad'),
+    "stickVertical" : document.getElementById('stickVertical'),
+    "stickHorizontal" : document.getElementById('stickHorizontal'),
     "fire" : document.getElementById('fire')
 }
 
 const operator = {
+    "pushStick" : function() {
+        model.stickVertical.style.top = "-3px";
+        model.stickHorizontal.style.top = "-20px";
+    },
     "fireDynamites" : function(dynamites) {
         dynamites.forEach(function(dynamite) {
             dynamite.classList.add('boom');
@@ -35,6 +41,7 @@ const operator = {
     "eventListeners" : function() {
         model.fire.addEventListener('click', function() {
            console.log('FIRE IN THE HOOOOOLE');
+           operator.pushStick();
            operator.fireDynamites(model.dynamitesTop4);
            setTimeout(function() {
                 operator.fireDynamites(model.dynamitesTop3);

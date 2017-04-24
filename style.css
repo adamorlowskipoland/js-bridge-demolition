@@ -4,6 +4,15 @@
     padding: 0;
 }
 
+.header {
+    width: 600px;
+    margin: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+}
+
 .wrapper {
     width: 600px;
     height: 600px;
@@ -196,7 +205,7 @@
 
 .box {
     border: 1px solid darkred;
-    background: #a0161b;
+    background: #5b080b;
     display: inline;
     width: 80px;
     height: 80px;
@@ -204,6 +213,24 @@
     bottom: 0;
     right: 0;
 }
+
+.box--stick {
+    width: 30px;
+    position: absolute;
+    border: 3px solid #5b080b;
+    transition: all .1s ease-in;
+}
+.box__stick--vertical {
+    transform: rotate(90deg);
+    top: -18px;
+    left: 25px;
+}
+.box__stick--horizontal {
+    top: -35px;
+    left: 25px;
+}
+
+
 .btn {
     width: 35px;
     height: 35px;
