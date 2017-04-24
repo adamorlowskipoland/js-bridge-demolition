@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="favicon.ico">
+    <title>Bridge demolition</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <section class="bridge">
+            <div class="sideroad sideroad--left"></div>
+            <div class="sideroad sideroad--right"></div>
+
+            <div class="pole pole--left">
+                <div class="line line--left-bottom"></div>
+                <div class="line line--left-top"></div>
+                <div class="line line--right-bottom" id="lineLeftBottom"></div>
+                <div class="line line--right-top" id="lineLeftTop"></div>
+            </div>
+            <div class="pole pole--right">
+                <div class="line line--left-bottom" id="lineRightBottom"></div>
+                <div class="line line--left-top" id="lineRightTop"></div>
+                <div class="line line--right-bottom"></div>
+                <div class="line line--right-top"></div>
+            </div>
+            
+            <span class="dynamite dynamite--top-1" id="dynamiteLeft1"></span>
+            <span class="dynamite dynamite--top-2" id="dynamiteLeft2"></span>
+            <span class="dynamite dynamite--top-3" id="dynamiteLeft3"></span>
+            <span class="dynamite dynamite--top-4" id="dynamiteLeft4"></span>
+            <span class="dynamite dynamite--top-1" id="dynamiteRight1"></span>
+            <span class="dynamite dynamite--top-2" id="dynamiteRight2"></span>
+            <span class="dynamite dynamite--top-3" id="dynamiteRight3"></span>
+            <span class="dynamite dynamite--top-4" id="dynamiteRight4"></span>
+
+            <div class="road" id="mainRoad"></div>
+
+            
+            <div class="river"></div>
+        </section>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

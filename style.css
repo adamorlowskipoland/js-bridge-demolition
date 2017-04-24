@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    margin: 10px;
+    position: relative;
+    background: #f3f3f3;
+}
+
+.sideroad {
+    height: 50px;
+    width: 75px;
+    background: darkgray;
+    position: absolute;
+}
+
+.sideroad--left {
+    top: 120px;
+    left: 0;
+}
+
+.sideroad--right {
+    top: 120px;
+    right: 0;
+}
+
+
+
+
+
+
+
+/* ######################## */
+/* ######################## */
+/* ######################## */
+.pole {
+    width: 75px;
+    height: 400px;
+    background: darkgray;
+    position: absolute;
+}
+.line {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: darkgray;
+}
+
+/* ######################## */
+
+.pole--left {
+    top: 20px;
+    left: 75px;
+}
+.pole--left .line--left-bottom {
+    top: 75px;
+    left: -50px;
+}
+.pole--left .line--left-top {
+    top: 50px;
+    left: -25px;
+}
+.pole--left .line--right-bottom {
+    top: 75px;
+    left: 100px;
+    background: orange;
+    transition: all .5s ease-in;
+}
+.pole--left .line--right-top {
+    top: 50px;
+    left: 75px;
+    background: orange;
+    transition: all .5s ease-in;
+}
+
+/* ######################## */
+
+.pole--right {
+    top: 20px;
+    right: 75px;
+}
+.pole--right .line--left-bottom {
+    top: 75px;
+    left: -50px;
+    background: orange;
+    transition: all .5s ease-in;
+}
+.pole--right .line--left-top {
+    top: 50px;
+    left: -25px;
+    background: orange;
+    transition: all .5s ease-in;
+}
+.pole--right .line--right-bottom {
+    top: 75px;
+    left: 100px;
+}
+.pole--right .line--right-top {
+    top: 50px;
+    left: 75px;
+}
+/* ######################## */
+/* ######################## */
+/* ######################## */
+
+
+
+.dynamite {
+    background: black;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+}
+#dynamiteLeft1 {
+    top: 70px;
+    left: 145px;
+}
+#dynamiteLeft2 {
+    top: 90px;
+    left: 145px;
+}
+#dynamiteLeft3 {
+    top: 120px;
+    left: 145px;
+}
+#dynamiteLeft4 {
+    top: 165px;
+    left: 145px;
+}
+
+.boom {
+    width: 15px;
+    height: 15px;
+    background: yellow;
+    transform: translate(-50%, -50%);
+    transition: all .05s ease-in;
+}
+.hide {
+    display: none;
+}
+
+/* ######################## */
+/* ######################## */
+
+.road {
+    height: 50px;
+    width: 300px;
+    position: absolute;
+    top: 120px;
+    left: 150px;
+    background: darkgray;
+    transition: all .5s ease-in;
+}
+
+/* ######################## */
+
+.river {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #3670ed;
+    width: 100%;
+    height: 180px;
+}
