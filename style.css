@@ -161,8 +161,9 @@
     width: 15px;
     height: 15px;
     background: yellow;
+    border: 1px solid red;
     transform: translate(-50%, -50%);
-    transition: all .05s ease-out;
+    transition: all .1s ease-out;
 }
 
 /* ######################## */
@@ -182,6 +183,15 @@
     left: 150px;
     background: darkgray;
     transition: all .5s ease-in;
+}
+.road--down {
+    top: 395px;
+}
+.line--down {
+    top: 375px;
+}
+.line--down-top {
+    top: 350px;
 }
 
 /* ######################## */
